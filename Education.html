@@ -1,1 +1,57 @@
+<p> <b>Here is my block of code, that i used previously in the semester:</b>
 
+<script>
+
+
+function fizzBuzz(N)
+{
+	
+	let count3 = 0;
+	let count5 = 0;
+
+	
+	for (let i = 1; i <= N; i++) {
+
+		
+		count3++;
+
+		count5++;
+
+		
+		let flag = false;
+
+		
+		if (count3 == 3) {
+			document.write("Fizz");
+
+			
+			count3 = 0;
+			flag = true;
+		}
+
+		
+		if (count5 == 5) {
+			document.write("Buzz");
+
+			
+			count5 = 0;
+			flag = true;
+		}
+
+		
+		if (!flag) {
+			document.write(i);
+		}
+
+		document.write(" ");
+	}
+}
+
+
+let N = 100;
+fizzBuzz(N);
+
+
+
+
+</script>
